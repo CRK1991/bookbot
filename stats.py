@@ -7,10 +7,9 @@ def char_count(text):
 
     no_caps_text = text.lower()
     for char in no_caps_text:
-        if char.isalpha():
-            if char in char_dict:
-                char_dict[char] += 1
-            else:
-                char_dict[char] = 1
+        if char in char_dict:
+            char_dict[char] += 1
+        else:
+            char_dict[char] = 1
 
     return char_dict
